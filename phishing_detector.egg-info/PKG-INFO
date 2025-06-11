@@ -1,0 +1,60 @@
+Metadata-Version: 2.4
+Name: phishing-detector
+Version: 1.0.0
+Summary: A Python package to detect phishing domains using multiple indicators
+Home-page: https://github.com/yourusername/phishing-detector
+Author: Your Name
+Author-email: your.email@example.com
+Project-URL: Bug Tracker, https://github.com/yourusername/phishing-detector/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Security
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+Requires-Dist: python-whois>=0.8.0
+Requires-Dist: beautifulsoup4>=4.9.3
+Requires-Dist: urllib3>=1.26.0
+Requires-Dist: python-dateutil>=2.8.1
+Requires-Dist: tldextract>=3.1.0
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.0.0; extra == "dev"
+Requires-Dist: flake8>=3.9.0; extra == "dev"
+Requires-Dist: black>=21.0; extra == "dev"
+Requires-Dist: mypy>=0.900; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Phishing Domain Detector
+
+A Python tool to detect potential phishing domains by checking multiple indicators.
+
+## Features
+
+- Checks against PhishTank and OpenPhish databases
+- Analyzes SSL certificate validity and details
+- Checks domain age (new domains are suspicious)
+- Detects suspicious URL patterns
+- Scores domains based on risk factors
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/phishing-detector.git
+cd phishing-detector
